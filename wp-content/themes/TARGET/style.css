@@ -1,0 +1,151 @@
+/*  
+Theme Name: Custom Post Type Pretty Permalinks
+Description: Say hello to a WordPress theme containing two more complicated examples of custom post types; one hierarchical (Products) and one with custom taxonomies (Recipes). The theme is focused on two common problems: creating "pretty" permalinks which include a taxonomy, and a menu architecture that works solidly.
+Author: Matt Berridge
+Author URL: http://twitter.com/mattberridge
+*/
+
+/* -- (Primitive) Reset -- */
+* { margin-top: 0; }
+html {font: 100%/1.5 sans-serif; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; } 
+body { margin: 0; }
+a { text-decoration: none; color: #891434; }
+a:hover, a:active, a:focus { color: #222; }
+h1 { line-height: 1.2; font-size: 2em; }
+h2, h3 { margin-bottom: .25em; }
+ul { list-style: none; padding-left: 0; }
+ul ul { padding-left: 1em; }
+img { max-width: 100%; display: block; margin: 0 auto; }
+ 
+/* -- Layout -- */
+.container {
+	overflow: hidden; 
+	width: 90%;
+	margin: 2em auto; }
+
+@media only screen and (min-width: 60em) {
+	[role=main] {
+		width: 70%;
+		float: left;
+		padding-bottom: 5em; }
+		
+	[role=complementary] {
+		width: 28%;
+		float: right; }	
+}	
+	
+/* -- Header -- */	
+.nav-primary li {
+	display: inline;
+	margin-right: .5em; }
+	
+.nav-primary a {
+	font-weight: bold;
+	border: 1px solid #ccc;
+	display: inline-block;
+	background: #fff;
+	padding: .5em .75em;
+	text-decoration: none; }
+	
+.nav-primary .current {
+	background-color: #333;
+	border-color: #333;
+	color: #fff; }
+
+.page-title {
+	background-color: #891434;
+	color: #fff; }
+	
+/* -- Shared -- */	
+.page-title,
+.pagination {
+	padding: .5rem 1rem; }	
+
+/* -- Objects -- */		
+.filled {
+	background-color: whiteSmoke; }	
+
+.bordered {
+	border: 1px solid #ccc; }
+	
+.bordered.dotted {
+	border-style: dotted; }
+
+.panel {
+	padding: 1em;
+	margin-bottom: 1em; }
+
+.media,
+.media-body {
+	overflow: hidden; }
+	
+.media-body {
+	padding-top: 1em; }
+	
+@media only screen and (min-width: 40em) {
+	.media-body  {
+		padding-top: 0; }
+		
+	.media-img {
+		float: right;
+		margin-left: 2em; }
+}		
+	
+/* -- Panels -- */
+.panel h2 {
+	font-size: 1.25em;
+	color: #333;
+	border-bottom: 1px dotted #ccc; }
+	
+.panel > :last-child {
+	margin-bottom: 0; }	
+
+.nav-secondary .current > a {
+	font-weight: bold; }
+
+/* -- Entries -- */
+.entry-title {
+	margin: 0 0 .3em 0; }
+	
+.entry-meta {
+	font-weight: bold;
+	color: #555; }
+
+.entry-head {
+	border-bottom: 1px dotted #ccc;
+	margin-bottom: .75em; }
+
+.product-index {
+	clear: both; }		
+	
+.single-media {
+	border: 1px dotted #ccc; }
+
+@media only screen and (min-width: 40em) {
+	.single-media {
+		max-width: 300px;
+		min-width: 200px; }
+}	
+	
+.single-media img + h2 {
+	padding-top: .5em; }
+	
+/* -- Pagination -- */	
+.pagination {
+	overflow: hidden; }
+	
+.newer {
+	float: right; }
+	
+/* -- Credit -- */
+.credit {
+	display: block;
+	text-align: center;
+	margin-bottom: 1em; }
+
+@media only screen and (min-width: 60em) {
+	.credit {
+		float: right;
+		margin: 0; }
+		
+}	
