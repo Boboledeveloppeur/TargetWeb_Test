@@ -6,9 +6,13 @@ CDI
 
 
 •	D’abord j’ai installé le server :  WampServer
+
 •	Ensuite j’ai téléchargé WordPress : 5.8.1
+
 •	Créer la base de donné sur le Server : TargetWeb
+
 •	Installation du site sur le server : (identifiant : root et mot de passe : rien)
+
 •	Donner le titre au site : TargetWeb
 •	Identifiant de connexion : TargetWeb
 •	Mot de passe de connexion : TargetWeb
